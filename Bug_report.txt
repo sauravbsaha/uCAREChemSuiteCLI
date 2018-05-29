@@ -1,3 +1,0 @@
-Bug_ID	Bug_detail	Status
-#uCLI001	Error in if (rings$AROMATIC[i] == TRUE) { : argument is of length zero	Resolved
-#uCLI002	Error in drug.class.deterministic("Structure2D_CID_16129666.sdf") : object 'k' not found	Resolved
