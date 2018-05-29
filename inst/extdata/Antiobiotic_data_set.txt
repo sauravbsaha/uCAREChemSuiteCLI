@@ -1,0 +1,152 @@
+Drug_Name	Drug_class	Drug_Pubchem_ID	Resistance_gene_class	Resistance_genes_involved	Bibliography
+Acriflavine	Acriflavine	443101	Two Component system	AcrAB-Tolc system	PMID: 24043404
+Amoxicillin	Beta Lactam	33613	Beta Lactamase	Bla(TEM)	PMID: 11751770
+Amoxicillin	Beta Lactam	33613	Beta Lactamase	Bla(OXA-1)	PMID: 11751770
+Amoxicillin	Beta Lactam	33613	Beta Lactamase	Bla(SHV)	PMID: 11751770
+Amoxicillin	Beta Lactam	33613	Beta Lactamase	ampC	PMID: 11751770
+Amoxicillin	Beta Lactam	33613	Beta Lactamase	CTX-M	PMID: 19402960
+Amoxicillin	Beta Lactam	33613	Horizontal Gene Transfer	Class 1 Integron	PMID: 26889395
+Ampicillin	Beta Lactam	6249	Beta Lactamase	Bla(TEM)	PMID: 20374640
+Ampicillin	Beta Lactam	6249	Beta Lactamase	Bla(SHV)	PMID: 20374640
+Ampicillin	Beta Lactam	6249	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Ampicillin	Beta Lactam	6249	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Ampicillin	Beta Lactam	6249	Beta Lactamase	Bla(CMY)	PMID: 11709361
+Ampicillin	Beta Lactam	6249	Two Component system	AcrAB efflux system	PMID: 8550435
+Apramycin	Aminoglycosides	3081545	Aminoglycoside modifying enzymes	aac(3)-IV	PMID: 19501867
+Aztreonam	Beta Lactam	5742832	Beta Lactamase	Bla(VIM-2)	PMID: 15301681
+Aztreonam	Beta Lactam	5742832	Beta Lactamase	Bla(IBC-1)	PMID: 15301681
+Benzalkonium	Benzalkonium	23705	Efflux pump	MdfA	PMID: 9079913
+Bicyclomycin	Peptide drug	426058	Efflux Pump	BcR	PMID: 8486276
+Cefalotin	Beta Lactam	6024	Horizontal Gene Transfer	Class 1 Integron	PMID: 26889395
+Cefalotin	Beta Lactam	6024	Beta Lactamase	Bla(CMY)	PMID: 11709361
+Cefepime	Beta Lactam	5479537	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Cefepime	Beta Lactam	5479537	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Cefepime	Beta Lactam	5479537	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Cefepime	Beta Lactam	5479537	Efflux pump	marA	PMID: 21048014
+Cefepime	Beta Lactam	5479537	Plasmid mediated Beta lactamase	Bla(CMY)- deletion resulting in Bla(CMY-33) and Bla(CMY-44)	PMID: 19414578
+Cefoselis	Beta Lactam	5748845	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Cefoselis	Beta Lactam	5748845	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Cefotaxime	Beta Lactam	5742673	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Cefotaxime	Beta Lactam	5742673	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Cefotaxime	Beta Lactam	5742673	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Cefotaxime	Beta Lactam	5742673	Beta Lactamase	Bla(CTX-M)	PMID: 12111569
+Cefoxitin	Beta Lactam	441199	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Cefoxitin	Beta Lactam	441199	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Cefoxitin	Beta Lactam	441199	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Cefoxitin	Beta Lactam	441199	Beta Lactamase	Bla(VIM-2)	PMID: 15301681
+Cefoxitin	Beta Lactam	441199	Beta Lactamase	Bla(IBC-1)	PMID: 15301681
+Cefpirome	Beta Lactam	5479539	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Cefpirome	Beta Lactam	5479539	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Ceftazidime	Beta Lactam	5481173	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Ceftazidime	Beta Lactam	5481173	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Ceftazidime	Beta Lactam	5481173	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Ceftazidime	Beta Lactam	5481173	Horizontal Gene Transfer	Class 1 Integron	PMID: 26889395
+Cefradine	Beta Lactam	38103	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Cefradine	Beta Lactam	38103	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Cefuroxime	Beta Lactam	5479529	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Ceftriaxone	Beta Lactam	5479530	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Ceftriaxone	Beta Lactam	5479530	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Ceftiofur	Beta Lactam	6328657	Beta Lactamase	Bla(CMY2)	PMID: 16751500
+Cethromycin	Polyketide	447451	Mutation	U2609C of 23S rRNA	PMID: 11698379
+Chloramphenicol	Chloramphenicol	5959	Chloramphenicol acetyltransferase	catI	PMID: 20374640
+Chloramphenicol	Chloramphenicol	5959	Chloramphenicol acetyltransferase	catII	PMID: 20374640
+Chloramphenicol	Chloramphenicol	5959	Chloramphenicol acetyltransferase	catIII	PMID: 20374640
+Chloramphenicol	Chloramphenicol	5959	Chloramphenicol acetyltransferase	cml	PMID: 20374640
+Chloramphenicol	Chloramphenicol	5959	Efflux pump	MdfA	PMID: 9079913
+Chloramphenicol	Chloramphenicol	5959	Efflux pump	AcrAB efflux system	PMID: 8550435
+Chloramphenicol	Chloramphenicol	5959	Efflux pump	floR	PMID: 11101601
+Ciprofloxacin	Fluoroquinolone	2764	Horizontal Gene Transfer	Class 1 Integron	PMID: 26889395
+Ciprofloxacin	Fluoroquinolone	2764	Beta Lactamase	CTX-M Beta-lactamases	PMID: 19402960
+Ciprofloxacin	Fluoroquinolone	2764	Efflux pump	Mutation in gyrA gene of Escherichia coli	PMID: 11083655
+Ciprofloxacin	Fluoroquinolone	2764	Efflux pump	AcrAB efflux	PMID: 11083655
+Clarithromycin	Polyketide	84029	Two Component system	AcrAB-TolC pump	PMID: 15328143
+CO-Trimoxazole	Drug Cocktail	358641	Horizontal Gene Transfer	Class 1 Integron	PMID: 26889395
+CO-Trimoxazole	Drug Cocktail	358641	Beta Lactamase	CTX-M Beta-lactamases	PMID: 19402960
+Daunomycin	Anthracycline	30323	Efflux pump	MdfA	PMID: 9079913
+Doripenem	Beta Lactam	73303	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Doripenem	Beta Lactam	73303	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Ertapenem	Beta Lactam	150610	Beta Lactamase	Bla(CTX-M-15)	PMID: 22252797
+Ertapenem	Beta Lactam	150610	Beta Lactamase	Bla(CMY-6)	PMID: 22252797
+Ertapenem	Beta Lactam	150610	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Ertapenem	Beta Lactam	150610	16S rRNA methylase	armA	PMID: 22252797
+Erythromycin	Polyketide	12560	Efflux pump	MdfA	PMID: 9079913
+Erythromycin	Polyketide	12560	Efflux pump	EmrE protein	PMID: 9710669
+Erythromycin	Polyketide	12560	Mutation	Mutations in the tentacles of L4 and L22, proteins of Escherichia coli larger ribosomal subunit confer macrolide resistance	PMID: 17956547
+Erythromycin	Polyketide	12560	Two Component system	AcrAB-TolC pump	PMID: 15328143
+Florfenicol	Florfenicol	114811	Efflux Pump	FloR	PMID: 15251195
+Gentamicin	Aminoglycosides	3467	Aminoglycoside modifying enzymes	aac(3)-IV	PMID: 19501867
+Gentamicin	Aminoglycosides	3467	Aminoglycoside modifying enzymes	ant(2)-I (also known aadB)	PMID: 21856840
+Gentamicin	Aminoglycosides	3467	Beta Lactamase	CTX-M ??-lactamases	PMID: 19402960
+Hygromycin B	Aminoglycosides	35766	Aminoglycoside modifying enzymes	APH(4)-Ia	PMID: 21084294
+Imipenem	Beta Lactam	104838	Beta Lactamase	Bla(CTX-M-15)	PMID: 22252797
+Imipenem	Beta Lactam	104838	Beta Lactamase	Bla(CMY-6)	PMID: 22252797
+Imipenem	Beta Lactam	104838	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Imipenem	Beta Lactam	104838	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Imipenem	Beta Lactam	104838	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Imipenem	Beta Lactam	104838	16S rRNA methylase	armA	PMID: 22252797
+Kanamycin	Aminoglycosides	6032	Efflux pump	MdfA	PMID: 9079913
+Kanamycin	Aminoglycosides	6032	Aminoglycoside modifying enzymes	aac(3)-IV	PMID: 19501867
+Kanamycin	Aminoglycosides	6032	Aminoglycoside modifying enzymes	ant(2)-I (also known aadB)	PMID: 21856840
+Kanamycin	Aminoglycosides	6032	Aminoglycoside modifying enzymes	aph(3)-Ia	PMID: 14506033
+Kanamycin	Aminoglycosides	6032	Aminoglycoside modifying enzymes	aph(3)-II	PMID: 14506033
+Meropenem	Beta Lactam	441130	Beta Lactamase	Bla(CTX-M-15)	PMID: 22252797
+Meropenem	Beta Lactam	441130	Beta Lactamase	Bla(CMY-6)	PMID:2252797
+Meropenem	Beta Lactam	441130	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Meropenem	Beta Lactam	441130	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Meropenem	Beta Lactam	441130	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Meropenem	Beta Lactam	441130	16S rRNA methylase	armA	PMID: 22252797
+Minocycline	Polyketide	54675783	Efflux pump	yhiV	PMID: 21048014
+Moxalactam	Beta lactam	47499	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Moxalactam	Beta lactam	47499	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Nalidixic Acid	Quinolone	4421	Horizontal Gene Transfer	Integron 1	PMID: 26889395
+Nalidixic Acid	Quinolone	4421	Efflux pump/ Multi component system	EmrAB operon	PMID: 9710669
+Nalidixic Acid	Quinolone	4421	Efflux pump	AcrAB efflux system	PMID: 8550435
+Nalidixic Acid	Quinolone	4421	Efflux pump	marA	PMID: 21048014
+Nalidixic Acid	Quinolone	4421	Efflux pump	EmrB	PMID: 1409590
+Neomycin	Aminoglycosides	8378	Aminoglycoside modifying enzymes	aac(3)-IV	PMID: 19501867
+Neomycin	Aminoglycosides	8378	Aminoglycoside modifying enzymes	aph(3)-Ia	PMID: 14506033
+Neomycin	Aminoglycosides	8378	Aminoglycoside modifying enzymes	aph(3)-IIa	PMID: 14506033
+Nitrofurantoin	Nitrofurans	6604200	Plasmid mediated Efflux Pump	oqxAB	PMID: 26552976
+Norfloxacin	Quinolones	4539	Multidrug Efflux Pump	ydhE	PMID: 12615854
+Novobiocin	Aminocoumarin	54675769	Response regulator which stimulate multidrug transporter ABC expression	BaeR	PMID: 12107133
+Penicillin G	Beta Lactam	5904	Beta Lactamase	Bla(NDM-1)	PMID: 25092693
+Penicillin G	Beta Lactam	5904	Beta Lactamase	Bla(NDM-12)	PMID: 25092693
+Piperacillin	Beta Lactam	43672	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Polymyxin B	Cationic antimicrobial peptides	49800004	Two Component system	AcrAB-Tolc system	PMID: 19926649
+Polymyxin B	Cationic antimicrobial peptides	49800004	Phosphorylation of undecaprenol	bacA	PMID: 8389741
+Puromycin	Aminoglycosides	439530	Efflux pump	MdfA	PMID: 9079913
+Rhodamine	Rhodamine	6694	Efflux pump	MdfA	PMID: 9079913
+Rifampin	Polyketide	5381226	Efflux pump	MdfA	PMID: 9079913
+Rifampin	Polyketide	5381226	Efflux pump	AcrAB efflux system	PMID: 8550435
+Sitafloxacin	Quinolone	461399	Efflux Pump	MdfA	PMID: 21048014
+Streptomycin	Aminoglycosides	19649	Aminoglycoside modifying enzymes	APH3 also known as strA	PMID: 9988047
+Streptomycin	Aminoglycosides	19649	Aminoglycoside modifying enzymes	ant(3)-Ia (also known as aadA)	PMID: 21856840
+Streptomycin	Aminoglycosides	19649	Aminoglycoside modifying enzymes	APH6 also known as strB	PMID: 9988047
+Sulfadiazine	Sulfonamide	5215	Efflux pump	EmrE	PMID: 9710669
+Sulfamethoxazole	Sulfonamide	5329	Dihydropteroate synthase	Sul1	PMID: 24423710
+Sulfamethoxazole	Sulfonamide	5329	Dihydropteroate synthase	Sul2	PMID: 24423710
+Sulfamethoxazole	Sulfonamide	5329	Dihydropteroate synthase	Sul3	PMID: 24423710
+Telithromycin	Polyketide	3002190	Mutation	U2609C of 23S rRNA	PMID: 11698379
+Telithromycin	Polyketide	3002190	Two Component system	AcrAB-TolC pump	PMID: 15328143
+Tetracycline	Polyketide	54675776	Tetracycline resistance protein-Efflux Pump	tetA	PMID: 20374640
+Tetracycline	Polyketide	54675776	Tetracycline resistance protein-Efflux Pump	tetB	PMID: 20374640
+Tetracycline	Polyketide	54675776	Tetracycline resistance protein-Efflux Pump	tetC	PMID: 20374640
+Tetracycline	Polyketide	54675776	Tetracycline resistance protein-Efflux Pump	tetD	PMID: 20374640
+Tetracycline	Polyketide	54675776	Tetracycline resistance protein-Efflux Pump	tet E	PMID: 20374640
+Tetracycline	Polyketide	54675776	Tetracycline resistance protein-Efflux Pump	tet G	PMID: 20374640
+Tetracycline	Polyketide	54675776	Efflux pump	MdfA	PMID: 9079913
+Tetracycline	Polyketide	54675776	Efflux pump	EmrE protein	PMID: 9710669
+Tetracycline	Polyketide	54675776	Efflux pump	AcrAB efflux system	PMID: 8550435
+Tetracycline	Polyketide	54675776	Horizontal Gene Transfer	Integron 1	PMID: 26889395
+Thiolactomycin	Thiolactomycin	445629	Efflux pump/ Multi component system	EmrAB operon	PMID: 9710669
+Ticarcillin	Beta Lactam	36921	Beta Lactamase	Bla(NDM-4)	PMID: 22252797
+Tobramycin	Aminoglycosides	36294	Aminoglycoside modifying enzymes	aac(3)-IV	PMID: 6374024
+Tobramycin	Aminoglycosides	36294	Aminoglycoside modifying enzymes	ant(2)-I (also known aadB)	PMID: 21856840
+Trimethoprim	Anisoles	5578	Modification of enzyme Dihydrofolate reductase	dfrA1	PMID: 20374640
+Trimethoprim	Anisoles	5578	Modification of enzyme Dihydrofolate reductase	dfrA9	PMID: 20374640
+Trimethoprim	Anisoles	5578	Modification of enzyme Dihydrofolate reductase	dfrA12	PMID: 20374640
+Trimethoprim	Anisoles	5578	Modification of enzyme Dihydrofolate reductase	dfrA13	PMID: 20374640
+Trimethoprim	Anisoles	5578	Modification of enzyme Dihydrofolate reductase	dfr7	PMID: 20374640
+Trimethoprim	Anisoles	5578	Modification of enzyme Dihydrofolate reductase	dfr17	PMID: 20374640
+Trimethoprim	Anisoles	5578	Modification of enzyme Dihydrofolate reductase	dhfrV	PMID: 14506033
+Trimethoprim	Anisoles	5578	Modification of enzyme Dihydrofolate reductase	dhfrXIII	PMID: 14506033
