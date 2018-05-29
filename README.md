@@ -31,8 +31,7 @@ Imports
 
 Installation
 ============
-The package can be installed from [CRAN](https://cran.r-project.org/package=
-CLI) (recommended). 
+The package can be installed from [CRAN](https://cran.r-project.org/package=uCAREChemSuiteCLI) (recommended). 
 
 ```R
 ## CMD Installation
