@@ -201,6 +201,55 @@ if(!is.null(rings$AROMATIC))
   # Rules for sulfonamide ends here
   ######################################## Formating needed after this #############################
 
+  # Rule for Aminoglycoside (Whether glycosidic sugar present or not)
+  aromatic_rings_final<- list()
+  sugar.present<- 0
+
+  if(!is.null(rings$AROMATIC))
+  {
+    for(i in 1:length(rings$AROMATIC))
+    {
+      if(rings$AROMATIC[i]==FALSE)
+      {
+        aromatic_rings<- rings$RINGS[i]
+        ring.elements<-  data.frame(strsplit(aromatic_rings[[1]],"_"))[1,]
+
+
+        aliphatic.oxygen.counter <- 0
+        aliphatic.carbon.counter <- 0
+        for(j in 1:length(ring.elements))
+        {
+          if("C" %in% ring.elements[,j] == TRUE)
+          {
+            aliphatic.carbon.counter <- aliphatic.carbon.counter + 1
+          }
+          else if("O" %in% ring.elements[,j] == TRUE)
+          {
+            aliphatic.oxygen.counter <- aliphatic.oxygen.counter + 1
+          }
+        }
+
+        if(aliphatic.carbon.counter  == 5 && aliphatic.oxygen.counter == 1 && length(ring.elements)==6)
+        {
+          sugar.present <- 1
+        }
+      }
+    }
+  }
+
+
+  #Functional groups common in Aminoglycosides viz. ROR and ROH
+  functional.group<- groups(read.SDFset(sdf[[1]]), groups="fctgroup", type="countMA")
+
+  imp.func.group.aminoglycoside <- 0
+  if(functional.group["ROH"] != 0 && functional.group["ROR"] !=0)
+    {
+      imp.func.group.aminoglycoside <- 1
+    }
+
+
+
+
   #Rule for Nitrofurantoin
   #Acquisition of Carbon number in the aromatic ring of nitrofurans
 
@@ -448,7 +497,7 @@ if(!is.null(nrow(top1_N)))
   }
 
   #Rule for Aminoglycoside
-  else if(carbon != 0 && hydrogen >= 2 * oxygen && nitrogen !=0 && chlorine ==0){
+  else if(carbon != 0 && hydrogen >= 2 * oxygen && nitrogen !=0 && chlorine ==0 && sugar.present ==1 && imp.func.group.aminoglycoside == 1){
     predicted_class<- "Aminoglycosides"
   }
 

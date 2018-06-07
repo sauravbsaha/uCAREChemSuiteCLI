@@ -1,7 +1,7 @@
 Package: uCAREChemSuiteCLI
 Type: Package
 Title: Resistome Predicter
-Version: 0.1.1
+Version: 0.1.2
 Date: 2018-05-29
 Author: Saurav Bhaskar Saha, Vipul Gupta, Pramod Wasudeo Ramteke
 Maintainer: Saurav Bhaskar Saha <saurav.saha@shiats.edu.in>
