@@ -83,7 +83,7 @@ All functions are documented. You can find additional information using the help
 Bugs
 ===========
 Please report any issues or bugs you find while installing/running **uCAREChemSuiteCLI** to:
--   Saurav Bhaskar Saha [<saurav.saha@shiats.edu.in>]
+-   Saurav Bhaskar Saha [<saurav.saha@shiats.edu.in>] :)
 
 License
 ============
