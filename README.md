@@ -29,6 +29,35 @@ Imports
 -   utils (tested in version 3.4.3)
 -   usethis (tested in version 1.3.0)
 
+
+Installation of Pre-requisite packages
+============
+Pre-requisite packages viz. stats, utils and usethis can be installed from CRAN whereas ChemmineR can be installed from bioconductor using the following commands:
+
+
+```R
+## stats Installation
+ install.packages("stats")
+```
+
+
+```R
+## utils Installation
+ install.packages("utils")
+```
+
+
+```R
+## usethis Installation
+ install.packages("usethis")
+```
+
+```R
+## ChemmineR Installation
+source("https://bioconductor.org/biocLite.R")
+biocLite("ChemmineR")
+```
+
 Installation
 ============
 The package can be installed from [CRAN](https://cran.r-project.org/package=uCAREChemSuiteCLI) (recommended). 
