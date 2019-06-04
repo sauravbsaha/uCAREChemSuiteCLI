@@ -4,10 +4,12 @@
 \alias{drug.resistome.deterministic}
 \title{drug.resistome.deterministic}
 \usage{
-drug.resistome.deterministic("sdf")
+drug.resistome.deterministic("sdf", "Organism")
 }
 \arguments{
 \item{sdf}{input sdf file}
+
+\item{Organism}{Escherichia coli = 1, Pseudomonas aeruginosa = 2}
 }
 \value{
 Predicted resistome of the candidate drug using deterministic model
@@ -21,6 +23,6 @@ uCAREChemSuiteCLI
 \examples{
 {
 example.resistome.deterministic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
-drug.resistome.deterministic(example.resistome.deterministic)
+drug.resistome.deterministic(example.resistome.deterministic, "1")
 }
 }

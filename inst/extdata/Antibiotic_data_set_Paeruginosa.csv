@@ -1,0 +1,124 @@
+Drug_Name,Drug_class,Drug_Pubchem_ID,Resistance_gene_class,Resistance_genes_involved,Bibliography
+Amikacin,Aminoglycosides,37768,Beta lactamase,Bla(GES-18),PMID: 23114760
+Amikacin,Aminoglycosides,37768,Aminoglycosides acetyltransferase,AAC(6')-I,PMID: 8655211
+Amikacin,Aminoglycosides,37768,Aminoglycosides nucleotidyltransferase,ANT(4')-II,PMID: 15673721
+Ampicillin,Beta Lactam,6249,Beta lactamase,Bla(AmpC),PMID: 11823954
+Azlocillin,Beta Lactam,6479523,Efflux Pump,MexAB-OprM,PMID: 6821455
+Aztreonam,Beta Lactam,5742832,Outer Membrane Protein,OprM,PMID: 7793866
+Aztreonam,Beta Lactam,5742832,Efflux Pump,MexAB-OprM,PMID: 18676884
+Aztreonam,Beta Lactam,5742832,Beta lactamase,Bla(OXA-18),PMID: 11869272
+Carbenicillin,Beta Lactam,20824,Efflux Pump,MexAB-OprM,PMID: 18676884
+Carbenicillin,Beta Lactam,20824,Efflux Pump,MexCD-OprM,PMID: 8585714
+Cefoperazone,Beta Lactam,44187,Outer Membrane Protein,OprM,PMID: 7793866
+Cefoperazone,Beta Lactam,44187,Efflux Pump,MexCD-OprJ,PMID: 11895293
+Cefepime,Beta Lactam,5479537,Beta lactamase,Bla(TEM-42),PMID: 11869272
+Cefepime,Beta Lactam,5479537,Beta lactamase,Bla(SHV-2a),PMID: 11869272
+Cefepime,Beta Lactam,5479537,Beta lactamase,Bla(PER-I),PMID: 11869272
+Cefepime,Beta Lactam,5479537,Efflux Pump,MexAB-OprM,PMID: 10223959
+Cefepime,Beta Lactam,5479537,Efflux Pump,MexCD-OprJ,PMID: 11869272
+Cefoxitin,Beta Lactam,441199,Beta lactamase,Bla(AmpC),PMID: 9738828
+Cefozopran,Beta Lactam,9571080,Outer Membrane Protein,OprM,PMID: 7793866
+Cefozopran,Beta Lactam,9571080,Efflux Pump,MexAB-OprM,PMID: 10223959
+Cefozopran,Beta Lactam,9571080,Efflux Pump,MexCD-OprJ,PMID: 9687387
+Cefozopran,Beta Lactam,9571080,Outer Membrane Protein,OprJ,PMID: 7793866
+Cefpirome,Beta Lactam,5479539,Outer Membrane Protein,OprM,PMID: 7793866
+Cefpirome,Beta Lactam,5479539,Beta lactamase,Bla(TEM-42),PMID: 11869272
+Cefpirome,Beta Lactam,5479539,Beta lactamase,Bla(SHV-2a),PMID: 11869272
+Cefpirome,Beta Lactam,5479539,Beta lactamase,Bla(PER-I),PMID: 11869272
+Cefpirome,Beta Lactam,5479539,Efflux Pump,MexAB-OprM,PMID: 10223959
+Cefpirome,Beta Lactam,5479539,Efflux Pump,MexCD-OprJ,PMID: 11869272
+Cefsulodin,Beta Lactam,656575,Outer Membrane Protein,OprM,PMID: 7793866
+Cefsulodin,Beta Lactam,656575,Efflux Pump,MexAB-OprM,PMID: 11083635
+Cefsulodin,Beta Lactam,656575,Efflux Pump,MexCD-OprJ,PMID: 11083635
+Ceftazidime,Beta Lactam,5481173,Beta lactamase,Bla(TEM-42),PMID: 11869272
+Ceftazidime,Beta Lactam,5481173,Beta lactamase,Bla(SHV-2a),PMID: 11869272
+Ceftazidime,Beta Lactam,5481173,Beta lactamase,Bla(PER-I),PMID: 11869272
+Ceftazidime,Beta Lactam,5481173,Beta lactamase,Bla(OXA-18),PMID: 11869272
+Ceftazidime,Beta Lactam,5481173,Beta lactamase,Bla(BEL-1),PMID: 19884378
+Ceftazidime,Beta Lactam,5481173,Beta lactamase,Bla(IMP-1),PMID: 12830405
+Ceftazidime,Beta Lactam,5481173,Outer Membrane Protein,OprM,PMID: 7793866
+Ceftazidime,Beta Lactam,5481173,Efflux Pump,MexAB-OprM,PMID: 11083635
+Cephalothin,Beta Lactam,6024,Beta lactamase,Bla(AmpC),PMID: 11823954
+Cerulenin,NA,5282054,Efflux Pump,MexCD-OprJ,PMID: 9527792
+Cerulenin,NA,5282054,Efflux Pump,MexAB-OprM,PMID: 9527792
+Chloramphenicol,Chloramphenicol,5959,Efflux Pump,MexAB-OprK,PMID: 8226684
+Chloramphenicol,Chloramphenicol,5959,Efflux Pump,MexAB-OprM,PMID: 9527792
+Chloramphenicol,Chloramphenicol,5959,Efflux Pump,MexEF-OprN,PMID: 11158756
+Ciprofloxacin,Quinolones,2764,Efflux Pump,MexAB-OprK,PMID: 8226684
+Ciprofloxacin,Quinolones,2764,Outer Membrane Protein,OprM,PMID: 7793866
+Ciprofloxacin,Quinolones,2764,Beta lactamase,Bla(GES-18),PMID: 23114760
+Ciprofloxacin,Quinolones,2764,Beta lactamase,Bla(IMP-1),PMID: 12830405
+Co-amoxiclav,NA,23665637,Beta lactamase,Bla(AmpC),PMID: 9738828
+Erythromycin,Polyketide,12560,Efflux Pump,MexAB-OprM,PMID: 9527792
+Erythromycin,Polyketide,12560,Efflux Pump,MexCD-OprJ,PMID: 11158756
+Erythromycin,Polyketide,12560,Efflux Pump,MexXY,PMID: 11158756
+Fleroxacin,Quinolones,3357,Outer Membrane Protein,OprM,PMID: 7793866
+Flomoxef,Beta Lactam,3357,Efflux Pump,MexAB-OprM,PMID: 11083635
+Flomoxef,Beta Lactam,3357,Efflux Pump,MexCD-OprJ,PMID: 11083635
+Fluoroquinolones,Fluoroquinolone,134224092,Efflux Pump,MexAB-OprM,PMID: 9527792
+Fusidic Acid,NA,3000226,Efflux Pump,MexAB-OprM,PMID: 9527792
+Gentamicin,Aminoglycosides,3467,Outer Membrane Protein,OprH,PMID: 6259125
+Gentamicin,Aminoglycosides,3467,Genomic Locus,amrAB locus and amrAB gene,PMID: 10582892
+Gentamicin,Aminoglycosides,3467,Aminoglycosides nucleotidyltransferase,"ANT(2"")-I",PMID: 15673721
+Gentamicin,Aminoglycosides,3467,Aminoglycosides phosphoryltransferase ,"APH(2"")",PMID: 8655211
+Gentamicin,Aminoglycosides,3467,Beta lactamase,Bla(IMP-1),PMID: 12830405
+Gentamicin,Aminoglycosides,3467,Beta lactamase,Bla(GES-18),PMID: 23114760
+Imipenem,Beta Lactam,104838,Outer Membrane Protein,OprD,PMID: 10223918
+Imipenem,Beta Lactam,104838,Outer Membrane Protein,MexT,PMID: 10223918
+Imipenem,Beta Lactam,104838,Efflux Pump,MexAB-OprM,PMID: 17483142
+Imipenem,Beta Lactam,104838,Efflux Pump,MexXY-OprM,PMID: 17483142
+Imipenem,Beta Lactam,104838,Beta lactamase,VIM-2,PMID: 11897589
+Imipenem,Beta Lactam,104838,Beta lactamase,VIM-4,PMID: 17483142
+Imipenem,Beta Lactam,104838,Beta lactamase,Bla(IMP-1),PMID: 12830405
+Imipenem,Beta Lactam,104838,Beta lactamase,Bla(P1b),PMID: 17483142
+Imipenem,Beta Lactam,104838,Aminoglycosides acetyltransferase,AAC(6’)-Ib,PMID: 17483142
+Imipenem,Beta Lactam,104838,Beta lactamase,OXA-35,PMID: 17483142
+Imipenem,Beta Lactam,104838,Beta lactamase,IMP1,PMID: 11869272
+Imipenem,Beta Lactam,104838,Beta lactamase,GES-18,PMID: 23114760
+Isepamicin,Aminoglycosides,3037209,Aminoglycosides phosphoryltransferase,APH(3')-VI ,PMID: 8655211
+Isepamicin,Aminoglycosides,3037209,Aminoglycosides nucleotidyltransferase,ANT(4')-II,PMID: 15673721
+Kanamycin,Aminoglycosides,6032,Aminoglycosides phosphoryltransferase,APH(3')-IIb,PMID: 15673721
+Lomefloxacin,Quinolones,3948,Outer Membrane Protein,OprM,PMID: 7793866
+Meropenem,Beta Lactam,441130,Outer Membrane Protein,OprM,PMID: 7793866
+Meropenem,Beta Lactam,441130,Efflux Pump,MexAB-OprM,PMID: 17483142
+Meropenem,Beta Lactam,441130,Efflux Pump,MexXY-OprM,PMID: 17483142
+Meropenem,Beta Lactam,441130,Beta lactamase,VIM-4,PMID: 17483142
+Meropenem,Beta Lactam,441130,Beta lactamase,GES-18,PMID: 23114760
+Meropenem,Beta Lactam,441130,Beta lactamase,P1b,PMID: 17483142
+Meropenem,Beta Lactam,441130,Beta lactamase,AAC(6’)-Ib,PMID: 17483142
+Meropenem,Beta Lactam,441130,Beta lactamase,OXA-35,PMID: 17483142
+Meropenem,Beta Lactam,441130,Beta lactamase,IMP1,PMID: 11869272
+Meropenem,Beta Lactam,441130,Beta lactamase,NDM-1,PMID: 30271939
+Moxalactam,Beta Lactam,47499,Efflux Pump,MexAB-OprM,PMID: 11083635
+Nalidixic Acid,Quinolones,4421,Efflux Pump,MexAB-OprK,PMID: 8226684
+Netilmicin,Aminoglycosides,441306,Aminoglycosides acetyltransferase,AAC(6')-I,PMID: 8655211
+Norfloxacin,Quinolones,4539,Outer Membrane Protein,OprM,PMID: 7793866
+Novobiocin,Aminocoumarin,54675769,Efflux Pump,MexAB-OprM,PMID: 9527792
+Novobiocin,Aminocoumarin,54675769,Efflux Pump,MexCD-OprJ,PMID: 11083635
+Penicillin G,Beta Lactam,5904,Beta lactamase,Bla(AmpC),PMID: 11869272
+Pipemidic Acid,Pyridopyrimidine,4831,Efflux Pump,MexAB-OprM,PMID: 6821455
+Rifampin,Polyketide,5381226,Efflux Pump,MexAB-OprM,PMID: 9527792
+Sparfloxacin,Quinolones,60464,Outer Membrane Protein,OprM,PMID: 7793866
+Streptomycin,Aminoglycosides,19649,Aminoglycosides nucleotidyltransferase,"ANT(3"")",PMID: 15673721
+Streptonigrin,Aminoquinone,5351165,Efflux Pump,MexAB-OprK,PMID: 8226684
+Sulbenicillin,Beta Lactam,20055036,Efflux Pump,MexAB-OprM,PMID: 11083635
+Sulfamethoxazole,Sulfonamide,5329,Outer Membrane Protein,OprM,PMID: 9036831
+Tetracycline,Polyketide,54675776,Efflux Pump,MexAB-OprK,PMID: 8226684
+Tetracycline,Polyketide,54675776,Efflux Pump,MexAB-OprM,PMID: 9527792
+Tetracycline,Polyketide,54675776,Efflux Pump,MexXY,PMID: 11158756
+Thiolactomycin,NA,445629,Efflux Pump,MexAB-OprM,PMID: 9527792
+Ticarcillin,Beta Lactam,36921,Beta lactamase,Bla(BEL-1),PMID: 19884378
+Tigecycline,Polyketide,54686904,Efflux Pump,MexXY,PMID: 12604529
+Tobramycin,Aminoglycosides,36294,Beta lactamase,Bla(GES-18),PMID: 23114760
+Tobramycin,Aminoglycosides,36294,Aminoglycosides acetyltransferase,AAC(6')-I,PMID: 8655211
+Tobramycin,Aminoglycosides,36294,Aminoglycosides phosphoryltransferase,"APH(2"")",PMID: 8655211
+Tobramycin,Aminoglycosides,36294,Aminoglycosides nucleotidyltransferase,"ANT(2"")-I",PMID: 15673721
+Tobramycin,Aminoglycosides,36294,Aminoglycosides nucleotidyltransferase,ANT(4')-II,PMID: 15673721
+Tosufloxacin,Quinolones,5517,Outer Membrane Protein,OprM,PMID: 7793866
+Triclosan,NA,5564,Efflux Pump,MexAB-OprM,PMID: 9527792
+Triclosan,NA,5564,Efflux Pump,MexCD-OprJ,PMID: 11158736
+Triclosan,NA,5564,Efflux Pump,TriABC,PMID: 17720796
+Trimethoprim,Anisoles,5578,Outer Membrane Protein,OprM,PMID: 9036831
+Trimethoprim,Anisoles,5578,Outer Membrane Protein,OprJ,PMID: 9036831
+Trimethoprim,Anisoles,5578,Efflux Pump,MexAB-OprM,PMID: 11895293
+Trimethoprim,Anisoles,5578,Efflux Pump,MexEF-OprN,PMID: 11158756

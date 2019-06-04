@@ -81,58 +81,58 @@ drug.class.deterministic <- function(sdf)
   intersect_rings<- list()
   #intersect_rings_final<- list()
 
-if(!is.null(rings$AROMATIC))
-{
-  for(i in 1:length(rings$AROMATIC))
+  if(!is.null(rings$AROMATIC))
+  {
+    for(i in 1:length(rings$AROMATIC))
     {
       if(rings$AROMATIC[i]==TRUE)
-        {
-          aromatic_rings<- rings$RINGS[i]
-          aromatic_rings_final<- rbind(aromatic_rings_final, aromatic_rings)
-        }
+      {
+        aromatic_rings<- rings$RINGS[i]
+        aromatic_rings_final<- rbind(aromatic_rings_final, aromatic_rings)
+      }
     }
 
 
-  for(i in 1:length(rings$AROMATIC))
+    for(i in 1:length(rings$AROMATIC))
     {
-        if(rings$AROMATIC[i]==FALSE)
-          {
-            aliphatic_rings<- rings$RINGS[i]
-            aliphatic_rings_final<- rbind(aliphatic_rings_final, aliphatic_rings)
-          }
+      if(rings$AROMATIC[i]==FALSE)
+      {
+        aliphatic_rings<- rings$RINGS[i]
+        aliphatic_rings_final<- rbind(aliphatic_rings_final, aliphatic_rings)
+      }
     }
 
-  if(as.numeric(length(rings$RINGS)) == as.numeric(length(aliphatic_rings_final)))
+    if(as.numeric(length(rings$RINGS)) == as.numeric(length(aliphatic_rings_final)))
     {
       quin<-0
     }
-  else
+    else
     {
       for(i in 1:length(aromatic_rings_final))
+      {
+        for(j in 1:length(aromatic_rings_final))
         {
-          for(j in 1:length(aromatic_rings_final))
-            {
-              intersect_rings<-Reduce(intersect, list(aromatic_rings_final[[i]], aromatic_rings_final[[j]]))
-              if(length(intersect_rings)==2)
-                {
-                  quin<-1
-                }
-            }
+          intersect_rings<-Reduce(intersect, list(aromatic_rings_final[[i]], aromatic_rings_final[[j]]))
+          if(length(intersect_rings)==2)
+          {
+            quin<-1
+          }
         }
       }
-}else {quin <- 2}
-# Quinole condition ends here
+    }
+  }else {quin <- 2}
+  # Quinole condition ends here
 
-# Whether Aromatic ring is present or not
-if(!is.null(rings$AROMATIC))
+  # Whether Aromatic ring is present or not
+  if(!is.null(rings$AROMATIC))
   {
     for (i in 1: length(rings$AROMATIC))
+    {
+      if(rings$AROMATIC[[i]]=='TRUE' )
       {
-        if(rings$AROMATIC[[i]]=='TRUE' )
-          {
-            ring_p_or_a<-1
-          }
+        ring_p_or_a<-1
       }
+    }
   }else{ring_p_or_a<-0}
 
   # $Acquisition of conditions for sulfonamide
@@ -243,9 +243,9 @@ if(!is.null(rings$AROMATIC))
 
   imp.func.group.aminoglycoside <- 0
   if(functional.group["ROH"] != 0 && functional.group["ROR"] !=0)
-    {
-      imp.func.group.aminoglycoside <- 1
-    }
+  {
+    imp.func.group.aminoglycoside <- 1
+  }
 
 
 
@@ -253,118 +253,118 @@ if(!is.null(rings$AROMATIC))
   #Rule for Nitrofurantoin
   #Acquisition of Carbon number in the aromatic ring of nitrofurans
 
-if(!is.null(rings$AROMATIC))
-{
-  top1<- list()
-  top1_0<- list()
-  for (i in 1:length(rings$AROMATIC))
+  if(!is.null(rings$AROMATIC))
   {
-    if(rings$AROMATIC[i]== TRUE)
+    top1<- list()
+    top1_0<- list()
+    for (i in 1:length(rings$AROMATIC))
     {
-      X <- list(rings$RINGS[i])[[1]][[1]]
-
-      if(length(X)==5)
+      if(rings$AROMATIC[i]== TRUE)
       {
-        Y <- data.frame(strsplit(X,"_"))[1,]
-        Z <- rowSums(Y == "C")
-        J <- rowSums(Y== "O")
+        X <- list(rings$RINGS[i])[[1]][[1]]
 
-        output_O<- J[[1]]
-        output_C<- Z[[1]]
+        if(length(X)==5)
+        {
+          Y <- data.frame(strsplit(X,"_"))[1,]
+          Z <- rowSums(Y == "C")
+          J <- rowSums(Y== "O")
 
-        top<- as.data.frame(output_C)
-        top_O<- as.data.frame(output_O)
+          output_O<- J[[1]]
+          output_C<- Z[[1]]
 
-        top1<- rbind(top1,top)
-        top1_0<- rbind(top1_0, top_O)
+          top<- as.data.frame(output_C)
+          top_O<- as.data.frame(output_O)
+
+          top1<- rbind(top1,top)
+          top1_0<- rbind(top1_0, top_O)
+        }
       }
-    }
-k<-0
-    if(!is.null(ncol(top1)))
+      k<-0
+      if(!is.null(ncol(top1)))
       {
         for(j in 1: ncol(top1))
+        {
+          if(top1[j]== 4 && top1_0[j]==1)
           {
-            if(top1[j]== 4 && top1_0[j]==1)
-              {
-                k<-4
-              }
+            k<-4
           }
         }
-    else
+      }
+      else
       {
         k<-0
       }
 
-    ring_nitrofuran_C<-k
-  }
-}else(ring_nitrofuran_C <- 0)
+      ring_nitrofuran_C<-k
+    }
+  }else(ring_nitrofuran_C <- 0)
 
   #Acquisition of Carbon content in aliphatic rings
-if(!is.null(rings$AROMATIC) && !is.null(rings$RINGS))
-{
-  top1<- list()
-  for (i in 1:length(rings$AROMATIC))
+  if(!is.null(rings$AROMATIC) && !is.null(rings$RINGS))
   {
-    if(rings$AROMATIC[i]== FALSE)
+    top1<- list()
+    for (i in 1:length(rings$AROMATIC))
     {
-      X <- list(rings$RINGS[i])[[1]][[1]]
-      Y <- data.frame(strsplit(X,"_"))[1,]
-      Z <- rowSums(Y == "C")
+      if(rings$AROMATIC[i]== FALSE)
+      {
+        X <- list(rings$RINGS[i])[[1]][[1]]
+        Y <- data.frame(strsplit(X,"_"))[1,]
+        Z <- rowSums(Y == "C")
 
-      output_C<- Z[[1]]
-      top<- as.data.frame(output_C)
-      top1<- rbind(top1,top)
+        output_C<- Z[[1]]
+        top<- as.data.frame(output_C)
+        top1<- rbind(top1,top)
+      }
     }
-  }
-        if(!is.null(nrow(top1)))
-          {
-            ring_C<-0
-            for(j in 1: nrow(top1))
-              {
-                if(top1[[1]][j]== 3)
-                  {
-                    ring_C<-3
-                  }
-              }
-        }else
-        { ring_C <- 0}
-
-} else
-        { ring_C <- 0}
-
-#Acquisition of Nitrogen content in aliphatic rings
-if(!is.null(rings$AROMATIC) && !is.null(rings$RINGS))
-  {
-  top_N<- list()
-  top1_N<- list()
-  for (i in 1:length(rings$AROMATIC))
-  {
-    if(rings$AROMATIC[i] == FALSE)
+    if(!is.null(nrow(top1)))
     {
-      X <- list(rings$RINGS[i])[[1]][[1]]
-      Y <- data.frame(strsplit(X,"_"))[1,]
-      Z <- rowSums(Y == "N")
+      ring_C<-0
+      for(j in 1: nrow(top1))
+      {
+        if(top1[[1]][j]== 3)
+        {
+          ring_C<-3
+        }
+      }
+    }else
+    { ring_C <- 0}
 
-      output_N<- Z[[1]]
-      top_N<- as.data.frame(output_N)
-      top1_N<- rbind(top1_N,top_N)
-    }
-  }
-  ring_N<-0
+  } else
+  { ring_C <- 0}
 
-if(!is.null(nrow(top1_N)))
-{
-  for(j in 1: nrow(top1_N))
+  #Acquisition of Nitrogen content in aliphatic rings
+  if(!is.null(rings$AROMATIC) && !is.null(rings$RINGS))
   {
-    if(top1_N[[1]][j]== 1)
+    top_N<- list()
+    top1_N<- list()
+    for (i in 1:length(rings$AROMATIC))
     {
-      ring_N<-1
+      if(rings$AROMATIC[i] == FALSE)
+      {
+        X <- list(rings$RINGS[i])[[1]][[1]]
+        Y <- data.frame(strsplit(X,"_"))[1,]
+        Z <- rowSums(Y == "N")
+
+        output_N<- Z[[1]]
+        top_N<- as.data.frame(output_N)
+        top1_N<- rbind(top1_N,top_N)
+      }
     }
-  }
-}else {ring_N<-0}
+    ring_N<-0
+
+    if(!is.null(nrow(top1_N)))
+    {
+      for(j in 1: nrow(top1_N))
+      {
+        if(top1_N[[1]][j]== 1)
+        {
+          ring_N<-1
+        }
+      }
+    }else {ring_N<-0}
 
 
-}else{ ring_N<-0 }
+  }else{ ring_N<-0 }
 
   #Total Rings
   if(!is.null(ro[1]))
@@ -382,9 +382,18 @@ if(!is.null(nrow(top1_N)))
 
 
   # Prediction (Deterministic) starts here ######
+  # Rule for Pyridopyrimidine
+  if(carbon == 14 && hydrogen == 17 &&  nitrogen == 5  && oxygen ==3){
+    predicted_class<- "Pyridopyrimidine"
+  }
+
+  # Rule for Aminoquinone
+  else if(carbon == 25 && hydrogen == 22 &&  nitrogen == 4  && oxygen ==8){
+    predicted_class<- "Aminoquinone"
+  }
 
   #Rule for Acriflavine
-  if(carbon == 27 && chlorine ==1 && hydrogen == 25 &&  nitrogen == 6 && total_ring==12 && aromatic_ring ==12){
+  else if(carbon == 27 && chlorine ==1 && hydrogen == 25 &&  nitrogen == 6 && total_ring==12 && aromatic_ring ==12){
     predicted_class<- "Acriflavine"
   }
 
@@ -555,7 +564,7 @@ drug.class.stochastic <- function(sdf, NearestNeighbor, Threshold){
   sdf_input <- read.SDFset(sdf[[1]])
   sdf_input_ap<- sdf2ap(sdf_input)
 
-  df<-cmp.search(apset, sdf_input_ap, type=3, cutoff = 57, quiet=TRUE)
+  df<-cmp.search(apset, sdf_input_ap, type=3, cutoff = 77, quiet=TRUE)
   colnames(df)<- c("Index","Drug_Name","Score")
 
   # Clustering drug against database
@@ -563,70 +572,70 @@ drug.class.stochastic <- function(sdf, NearestNeighbor, Threshold){
   drugs_falling_under_threshold<-head(subset_of_drugs_with_equal_or_less_than_score, n=as.numeric(NearestNeighbor))
 
   if(nrow(subset_of_drugs_with_equal_or_less_than_score) != 0)
+  {
+    # Finding the class of drug using Stochastic model
+    antibiotic_dataset<- system.file('extdata/Antibiotic_data_set.csv', package="uCAREChemSuiteCLI")
+    db<- read.csv2(antibiotic_dataset ,header = TRUE, sep=",")
+    drug_list<- drugs_falling_under_threshold[2]
+
+    if (as.numeric(table(subset_of_drugs_with_equal_or_less_than_score["Score"] >=Threshold)["TRUE"]) < as.numeric(NearestNeighbor))
     {
-      # Finding the class of drug using Stochastic model
-      antibiotic_dataset<- system.file('extdata/Antiobiotic_data_set.txt', package="uCAREChemSuiteCLI")
-      db<- read.table(antibiotic_dataset,sep="\t",header = T)
-      drug_list<- drugs_falling_under_threshold[2]
+      subset_of_drug_class<- data.frame()
+      subset_of_drug_class_final<- data.frame()
 
-      if (as.numeric(table(subset_of_drugs_with_equal_or_less_than_score["Score"] >=Threshold)["TRUE"]) < as.numeric(NearestNeighbor))
+      for(i in 1:length(drug_list[,1]))
+      {
+        for(j in 1:length(db[,1]))
         {
-          subset_of_drug_class<- data.frame()
-          subset_of_drug_class_final<- data.frame()
-
-          for(i in 1:length(drug_list[,1]))
-            {
-              for(j in 1:length(db[,1]))
-                {
-                  drug<- drug_list[[1]][i]
-                  db_drug<- db[[1]][j]
+          drug<- drug_list[[1]][i]
+          db_drug<- db[[1]][j]
 
 
-                  db_drug_final <- gsub(" ", "", db_drug[1])
-                  drug_final <- gsub("_", "", drug[1])
+          db_drug_final <- gsub(" ", "", db_drug[1])
+          drug_final <- gsub("_", "", drug[1])
 
-                  if(db_drug_final[1] %in% drug_final[1])
-                    {
-                      subset_of_drug_class<-db[j,]
-                      subset_of_drug_class_final<- rbind(subset_of_drug_class_final,subset_of_drug_class)
-                    }
-                }
-              }
+          if(db_drug_final[1] %in% drug_final[1])
+          {
+            subset_of_drug_class<-db[j,]
+            subset_of_drug_class_final<- rbind(subset_of_drug_class_final,subset_of_drug_class)
+          }
+        }
+      }
 
-                      #Concatanated dataframe of drugname, drug class and similarity socre
-                      concat_table_drug_Class_score<- cbind(unique(subset_of_drug_class_final[,1:2]),drugs_falling_under_threshold[,3])
+      #Concatanated dataframe of drugname, drug class and similarity socre
+      concat_table_drug_Class_score<- cbind(unique(subset_of_drug_class_final[,1:2]),drugs_falling_under_threshold[,3])
 
-                      #Prediction of drug class
-                      if(as.numeric(NearestNeighbor) == 1)
-                        {
-                          predicted_class<- c("Drug class:",as.character(concat_table_drug_Class_score[1,2]))
-                        }
-                      else if(as.numeric(NearestNeighbor) == 3)
-                        {
-                          if(as.numeric(concat_table_drug_Class_score[1,3])==1)
-                            {
-                              predicted_class<- c("Drug class:",as.character(concat_table_drug_Class_score[1,2]))
-                            }
-                          else
-                            {
-                              drug_class_frequency<- aggregate(data.frame(count = concat_table_drug_Class_score[,2]), list(value = concat_table_drug_Class_score[,2]), length)
-                              if(as.numeric(drug_class_frequency[1,2])>=2)
-                                {
-                                  predicted_class<- c("Drug class:",as.character(drug_class_frequency[1,1]))
-                                }
-                              else
-                                {
-                                  predicted_class<- c("Drug class:",as.character(drug_class_frequency[1,1]))
-                                }
-                            }
-                          }
+      #Prediction of drug class
+      if(as.numeric(NearestNeighbor) == 1)
+      {
+        predicted_class<- c("Drug class:",as.character(concat_table_drug_Class_score[1,2]))
+      }
+      else if(as.numeric(NearestNeighbor) == 3)
+      {
+        if(as.numeric(concat_table_drug_Class_score[1,3])==1)
+        {
+          predicted_class<- c("Drug class:",as.character(concat_table_drug_Class_score[1,2]))
         }
         else
+        {
+          drug_class_frequency<- aggregate(data.frame(count = concat_table_drug_Class_score[,2]), list(value = concat_table_drug_Class_score[,2]), length)
+          if(as.numeric(drug_class_frequency[1,2])>=2)
           {
-            neighbor <-subset_of_drugs_with_equal_or_less_than_score[1,2]
-            fetchted_row<-   subset(db, Drug_Name %in% as.character(neighbor))
-            predicted_class<-c("Drug class:", as.character(fetchted_row["Drug_class"][1,1]))
+            predicted_class<- c("Drug class:",as.character(drug_class_frequency[1,1]))
           }
+          else
+          {
+            predicted_class<- c("Drug class:",as.character(drug_class_frequency[1,1]))
+          }
+        }
+      }
+    }
+    else
+    {
+      neighbor <-subset_of_drugs_with_equal_or_less_than_score[1,2]
+      fetchted_row<-   subset(db, Drug_Name %in% as.character(neighbor))
+      predicted_class<-c("Drug class:", as.character(fetchted_row["Drug_class"][1,1]))
+    }
   }
   else
   {
@@ -637,38 +646,41 @@ drug.class.stochastic <- function(sdf, NearestNeighbor, Threshold){
   # Stochastic model Ends here ###############################################
 }
 
-
-
-
-
-
 # Resistome prediction starts here
 #' uCAREChemSuiteCLI
 #' @title drug.resistome.deterministic
 #' @description Takes structure data file (SDF) of candidate drug to predicts its resistome using deterministic model.
 #' @param sdf input sdf file
+#' @param Organism Escherichia coli = 1, Pseudomonas aeruginosa = 2
 #' @return Predicted resistome of the candidate drug using deterministic model
-#' @usage drug.resistome.deterministic("sdf")
+#' @usage drug.resistome.deterministic("sdf", "Organism")
 #' @import ChemmineR
 #' @import stats
 #' @import utils
 #' @import usethis
 #' @examples{
 #' example.resistome.deterministic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
-#' drug.resistome.deterministic(example.resistome.deterministic)
+#' drug.resistome.deterministic(example.resistome.deterministic, "1")
 #' }
 #' @export
 
 
-drug.resistome.deterministic <- function(sdf)
+drug.resistome.deterministic <- function(sdf, Organism)
 {
 
   drug_predicted_class<- drug.class.deterministic(sdf)
 
-# Reading the Database
-  antibiotic_dataset<- system.file('extdata/Antiobiotic_data_set.txt', package="uCAREChemSuiteCLI")
-  db<- read.table(antibiotic_dataset,sep="\t",header = T)
+  # Reading the Database
+  if(Organism == 1)
+  {
+    antibiotic_dataset<- system.file('extdata/Antibiotic_data_set_Ecoli.csv', package="uCAREChemSuiteCLI")
+    db<- read.csv2(antibiotic_dataset ,header = TRUE, sep=",")
+    db_drug_class<-db["Drug_class"]
+  } else if(Organism == 2)
+  {antibiotic_dataset<- system.file('extdata/Antibiotic_data_set_Paeruginosa.csv', package="uCAREChemSuiteCLI")
+  db<- read.csv2(antibiotic_dataset ,header = TRUE, sep=",")
   db_drug_class<-db["Drug_class"]
+  }
 
   drug_resistome<- list()
 
@@ -688,54 +700,61 @@ drug.resistome.deterministic <- function(sdf)
 }
 
 
-
 #' uCAREChemSuiteCLI
 #' @title drug.resistome.stochastic
 #' @description Takes structure data file (SDF) of candidate drug to predict its resistome using stochastic model.
 #' @param sdf input sdf file
-#' @param NearestNeighbor Nearest Neighbor = 1,
+#' @param NearestNeighbor Nearest Neighbor = 1, 3
 #' @param Threshold Threshold = 0.25, 0.3, 0.35, 0.4
+#' @param Organism Escherichia coli = 1, Pseudomonas aeruginosa = 2
 #' @return Predicted resistome of the candidate drug using Nearest Neighbor algorithm
-#' @usage drug.resistome.stochastic("sdf", "NearestNeighbor", "Threshold")
+#' @usage drug.resistome.stochastic("sdf", "NearestNeighbor", "Threshold", "Organism")
 #' @import ChemmineR
 #' @import stats
 #' @import utils
 #' @import usethis
 #' @examples{
 #' example.resistome.stochastic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
-#' drug.resistome.stochastic(example.resistome.stochastic, "3", "0.25")
+#' drug.resistome.stochastic(example.resistome.stochastic, "3", "0.25", "1")
 #' }
 #' @export
 
-drug.resistome.stochastic <- function(sdf, NearestNeighbor, Threshold)
+drug.resistome.stochastic <- function(sdf, NearestNeighbor, Threshold, Organism)
 {
 
   drug_predicted_class<- as.data.frame(drug.class.stochastic(sdf, NearestNeighbor, Threshold))
   if(is.na(drug_predicted_class[[1]][2]))
-    {
-      drug_resistome<- "Not enough neighbors"
-    }
+  {
+    drug_resistome<- "Not enough neighbors"
+  }
   else
-    {
+  {
     # Reading the Database
-      antibiotic_dataset<- system.file('extdata/Antiobiotic_data_set.txt', package="uCAREChemSuiteCLI")
-      db<- read.table(antibiotic_dataset,sep="\t",header = T)
+    if(Organism == 1){
+      antibiotic_dataset<- system.file('extdata/Antibiotic_data_set_Ecoli.csv', package="uCAREChemSuiteCLI")
+      db<- read.csv2(antibiotic_dataset ,header = TRUE, sep=",")
       db_drug_class<-db["Drug_class"]
-
-      drug_resistome<- list()
-
-      for(i in 1: nrow(db_drug_class))
-        {
-          if(db_drug_class[[1]][i] %in% drug_predicted_class[[1]][2])
-            {
-              drug_resistome_raw <- db[i,]
-              drug_resistome<- rbind(drug_resistome, drug_resistome_raw)
-            }
-        }
+    }else if(Organism == 2){
+      antibiotic_dataset<- system.file('extdata/Antibiotic_data_set_Paeruginosa.csv', package="uCAREChemSuiteCLI")
+      db<- read.csv2(antibiotic_dataset ,header = TRUE, sep=",")
+      db_drug_class<-db["Drug_class"]
     }
+    drug_resistome<- list()
+
+    for(i in 1: nrow(db_drug_class))
+    {
+      if(db_drug_class[[1]][i] %in% drug_predicted_class[[1]][2])
+      {
+        drug_resistome_raw <- db[i,]
+        drug_resistome<- rbind(drug_resistome, drug_resistome_raw)
+      }
+    }
+  }
 
   return(drug_resistome)
 
 
 }
+
+
 

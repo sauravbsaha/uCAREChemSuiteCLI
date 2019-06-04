@@ -4,14 +4,16 @@
 \alias{drug.resistome.stochastic}
 \title{drug.resistome.stochastic}
 \usage{
-drug.resistome.stochastic("sdf", "NearestNeighbor", "Threshold")
+drug.resistome.stochastic("sdf", "NearestNeighbor", "Threshold", "Organism")
 }
 \arguments{
 \item{sdf}{input sdf file}
 
-\item{NearestNeighbor}{Nearest Neighbor = 1,}
+\item{NearestNeighbor}{Nearest Neighbor = 1, 3}
 
 \item{Threshold}{Threshold = 0.25, 0.3, 0.35, 0.4}
+
+\item{Organism}{Escherichia coli = 1, Pseudomonas aeruginosa = 2}
 }
 \value{
 Predicted resistome of the candidate drug using Nearest Neighbor algorithm
@@ -25,6 +27,6 @@ uCAREChemSuiteCLI
 \examples{
 {
 example.resistome.stochastic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
-drug.resistome.stochastic(example.resistome.stochastic, "3", "0.25")
+drug.resistome.stochastic(example.resistome.stochastic, "3", "0.25", "1")
 }
 }
