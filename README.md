@@ -53,9 +53,13 @@ Pre-requisite packages viz. stats, utils and usethis can be installed from CRAN 
 ```
 
 ```R
-## ChemmineR Installation
+## ChemmineR Installation (For R < Version 3.5)
 source("https://bioconductor.org/biocLite.R")
 biocLite("ChemmineR")
+
+## ChemmineR Installation (For R >= Version 3.5)
+install.packages("BiocManager")
+BiocManager::install("ChemmineR", version = "3.8")
 ```
 
 Installation
