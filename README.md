@@ -14,7 +14,7 @@ Manual: uCAREChemSuiteCLI
 
 Introduction
 ============
-<p>This package consist of four functions viz. "drug.class.deterministic", "drug.class.stochastic", "drug.resistome.deterministic" and "drug.resistome.stochastic" respectively to predict resistome of <i>Escherichia coli</i> for drug chemical structure.</p>
+<p>This package consist of four functions viz. "drug.class.deterministic", "drug.class.stochastic", "drug.resistome.deterministic" and "drug.resistome.stochastic" respectively to predict resistome of <i>Escherichia coli</i> and <i>Pseudomonas aeruginosa</i> for drug chemical structure.</p>
 <p>
 It predicts the class/family of unknown candidate drug molecule using two algorithms viz. deterministic model ("drug.class.deterministic") and stochastic model ("drug.class.stochastic") [Unpublished data]. Furthermore once the drug class is predicted, the resistome of the predicted drug class can be fetched out from database using "drug.resistome.deterministic" and "drug.resistome.resistome" functions.</p>
 
