@@ -88,6 +88,7 @@ Run the algorithm using the provided examples with the following command:
 # Run drug.class.deterministic
 example.class.deterministic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
 drug.class.deterministic(example.class.deterministic)
+where example.class.deterministic = example sdf file
 ```
 
 ```R
@@ -99,13 +100,13 @@ drug.class.stochastic(example.class.stochastic,"3","0.25")
 ```R
 # Run drug.resistome.deterministic
 example.resistome.deterministic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
-drug.resistome.deterministic(example.resistome.deterministic)
+drug.resistome.deterministic(example.resistome.deterministic, "1")
 ```
 
 ```R
 # Run drug.resistome.stochastic
 example.resistome.stochastic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
-drug.resistome.stochastic(example.resistome.stochastic, "3", "0.25")
+drug.resistome.stochastic(example.resistome.stochastic, "3", "0.25", "1")
 ```
 
 Help
