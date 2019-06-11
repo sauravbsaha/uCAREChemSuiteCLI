@@ -84,11 +84,11 @@ Run the algorithm using the provided examples with the following command:
  library("uCAREChemSuiteCLI")
 ```
 
+Prediction of drug class using drug.class.deterministic would require drug structure in sdf format 
 ```R
 # Run drug.class.deterministic
 example.class.deterministic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
 drug.class.deterministic(example.class.deterministic)
-where example.class.deterministic = example sdf file
 ```
 
 ```R
