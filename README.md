@@ -84,6 +84,9 @@ Run the algorithm using the provided examples with the following command:
  library("uCAREChemSuiteCLI")
 ```
 
+# Syntex
+drug.class.deterministic("sdf")
+
 ```R
 # Run drug.class.deterministic
 example.class.deterministic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
