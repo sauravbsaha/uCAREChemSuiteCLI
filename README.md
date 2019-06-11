@@ -110,8 +110,7 @@ drug.resistome.stochastic(example.resistome.stochastic, "3", "0.25", "1")
  
 Help
 ============
-All functions are well documented. You can find additional information such as input arguments and function abstract using R help function.  
-eg. `??drug.class.deterministic`
+All functions are well documented. You can find additional information such as input arguments and function abstract using R help function. eg. `??drug.class.deterministic`
 
 Bugs
 ===========
