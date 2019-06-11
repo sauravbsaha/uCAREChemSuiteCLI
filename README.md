@@ -84,9 +84,6 @@ Run the algorithm using the provided examples with the following command:
  library("uCAREChemSuiteCLI")
 ```
 
-# Syntex
-drug.class.deterministic("sdf")
-
 ```R
 # Run drug.class.deterministic
 example.class.deterministic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
@@ -110,10 +107,10 @@ drug.resistome.deterministic(example.resistome.deterministic, "1")
 example.resistome.stochastic<- system.file('extdata/example.sdf', package="uCAREChemSuiteCLI")
 drug.resistome.stochastic(example.resistome.stochastic, "3", "0.25", "1")
 ```
-
+ 
 Help
 ============
-All functions are documented. You can find additional information using the help function of R. 
+All functions are well documented. You can find additional information such as input arguments and function abstract using R help function.  
 <br> eg. `??drug.class.deterministic`
 
 Bugs
